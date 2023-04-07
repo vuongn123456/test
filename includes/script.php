@@ -15,22 +15,24 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
-        $('#btn_add_student').on('click',function ()){
+
+        $('#add_data_student').on('submit',function (){
             var name = $('#name').val();
             var email = $('#email').val();
             var phone = $('#phone').val();
+
                 $.ajax({
-                    url : "./Controller/StudentController.php",
+                    url : "http://localhost/test/?page=student",
                     method : "POST",
                     data : { name : name, email : email, phone : phone},
                     success : function (data){
-                        console.log(success);
-                            alert('Them du lieu thanh cong');
+                        alert('Them du lieu thanh cong');
                     }
                 });
 
+        event.preventDefault();
 
+        })
 
-        }
     })
 </script>

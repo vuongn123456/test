@@ -5,10 +5,6 @@
                 <div class="card-title">Add student</div>
             </div>
 
-                <div class="alert alert-danger" role="alert">
-                    Create student fail!
-                </div>
-
             <form action="" name="frm_create_student" method="POST" id="add_data_student">
                 <div class="card-body">
                     <div class="form-group">
